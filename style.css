@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.nav_bar {
+  background-color: #0d1b2a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  flex-basis: 100%;
+  padding: 20px;
+}
+.nav_bar_items {
+  display: flex;
+}
+.icon_page_img {
+  width: 80px;
+}
+.nav_bar_buttons {
+  border-radius: 10px;
+  height: 50px;
+}
+.nav_bar_buttons_text {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px 10px;
+  font-family: "Concert One", cursive;
+  color: purple;
+}
+.nav_bar_buttons:hover {
+  transition: 0.3s;
+  height: 60px;
+}
+.section-grid-container {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  flex: 1 0 auto;
+  background-color: #1b263b;
+}
+.WebPageName {
+  font-size: 20px;
+  color: white;
+}
+.main-content {
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+  gap: 0 40px;
+}
+.card {
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid #ff2222;
+}
+.cardImage {
+  width: 100%;
+  height: 370px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.cardTitle {
+  font-size: 20px;
+  font-family: "Dangrek", cursive;
+  color: white;
+}
+.cardDescription {
+  font-family: "EB Garamond", serif;
+  color: white;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card:hover {
+  transform: translateY(-16px) rotate(3deg);
+  box-shadow: 12px 0px 32px 2px black;
+}
+.cardImage:hover {
+  transform: translateY(-16px) rotate(5deg);
+  box-shadow: 12px 0px 32px 2px black;
+}
+
+.nav_bottom {
+  background-color: #0d1b2a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  flex-basis: 100%;
+  padding: 20px;
+}
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.github_ic {
+  width: 50px;
+}
+.github_ic:hover {
+  transform: translateY(-8px) rotate(2deg);
+}
+.github_description {
+  font-size: 20px;
+  font-weight: 600;
+}
+.linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.linkedin_ic {
+  width: 50px;
+}
+.linkedin_ic:hover {
+  transform: translateY(-8px) rotate(2deg);
+}
+.linkedin_description {
+  font-size: 20px;
+  font-weight: 600;
+}
+.anchor_text_bottom {
+  text-decoration: none;
+  color: black;
+}
