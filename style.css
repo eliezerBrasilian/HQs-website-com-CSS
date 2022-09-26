@@ -47,73 +47,16 @@
   background-color: #1b263b;
 }
 .WebPageName {
-  padding: 10px;
-  font-size: 30px;
-  color: rgb(188, 18, 188);
-  cursor: pointer;
-}
-.WebPageName:hover {
+  font-size: 20px;
   color: white;
-  transition: 0.5s;
-  
 }
 .main-content {
-  flex: 1 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-  "card1 card2 card3 card4 card5 card6";
-  gap: 15px;
+  grid-template-areas: "card1 card2 card3";
+  gap: 0 40px;
 }
-
-
-/*add a responsividade*/
-
-@media (max-width: 1380px){
-  .main-content {
-    grid-template-areas: 
-    "card1 card2 card3"
-    "card4 card5 card6";
-    display: grid;
-    justify-items: center;
-    gap: 15px;
-    padding: 15px;
-    
-  }
-
-}
-@media (max-width: 860px){
-  .main-content {
-    grid-template-areas: 
-    "card1 card1 card2"
-    "card3 card3 card4"
-    "card5 card5 card6";
-    display: grid;
-    justify-items: center;
-    gap: 15px;
-    padding: 15px;
-    
-  }
-
-}
-@media (max-width: 680px){
-  .main-content {
-    grid-template-areas: 
-    "card1 card1 card1"
-    "card2 card2 card2"
-    "card3 card3 card3"
-    "card4 card4 card4"
-    "card5 card5 card5"
-    "card6 card6 card6";
-    gap: 40px;
-    padding: 15px;
-    
-  }
-
-}
-
 .card {
-  width: 220px;
+  width: 250px;
   border-radius: 10px;
   border: 2px solid #ff2222;
 }
@@ -141,15 +84,6 @@
 }
 .card3 {
   grid-area: card3;
-}
-.card4 {
-  grid-area: card4;
-}
-.card5 {
-  grid-area: card5;
-}
-.card6 {
-  grid-area: card6;
 }
 .card:hover {
   transform: translateY(-16px) rotate(3deg);
